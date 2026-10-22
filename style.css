@@ -1,0 +1,153 @@
+/*===== Style générale de la base =====*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: arial, sans-serif; 
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/*===== Header & Navigation =====*/
+header {
+    background-color: #1a73e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logos img {
+    height: 45px;
+    width: auto;
+    border-radius: 50%;
+}
+.logos span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*===== Menu de navigation =====*/
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/*===== bouton "Inscription =====*/
+nav ul li:last-child a {
+    background-color: #fbbc;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li:last-child a:hover {
+    background-color: #e5a9;
+}
+
+/*===== Section banniere =====*/
+.banniere {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-height: 350px;
+}
+.banniere img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*===== Section Formations =====*/
+.section-Formations {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.section-formations h1 {
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/*===== les 03 cartes =====*/
+.section-Formations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.section-Formations h1 {
+    width: 100%;
+}
+.carte {
+    background: #ffffff;
+    border: 1px solid #00a896;
+    border-radius: 8px;
+    padding: 40px 20px;
+    flex: 1;
+    min-width: 280px;
+    min-height: 200px;
+}
+.carte h3 {
+    color: #1a73e8;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+.carte p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/*===== Footer =====*/
+footer {
+    background-color: #1a73e6;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #333;
+}
+
+footer a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+.pied {
+    background-color: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.pied a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.pied a:hover {
+    color: #fbbc04;
+}
